@@ -111,45 +111,7 @@ if __name__ == '__main__':
 	second_answer5 = choice_one_question(choice5, sorted_list5)
 	result_list.append(second_answer5)
 
-
-
 	print(result_list)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 second_list_question = choice_one_question(1, ['bla', 'ble', 'bli'])
 
@@ -157,14 +119,3 @@ choice = 1
 a_list = ['bla', 'ble', 'bli']
 
 second_list_question = choice_one_question(choice, a_list)
-
-	
-	
-def choice_one_question(choice, a_list):
-	second_list_question = []
-
-	for index, obj in enumerate(a_list):
-		if index == choice:
-			second_list_question.append(obj)
-
-	return second_list_question
