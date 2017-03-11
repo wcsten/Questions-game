@@ -113,9 +113,11 @@ if __name__ == '__main__':
 
 	print(result_list)
 
-second_list_question = choice_one_question(1, ['bla', 'ble', 'bli'])
+	arquivo = open('Banco_de_questoes.txt', 'w')
+	arquivo.writelines(result_list)
+	arquivo.close()
 
-choice = 1
-a_list = ['bla', 'ble', 'bli']
-
-second_list_question = choice_one_question(choice, a_list)
+	arquivo = open('Banco_de_questoes.txt', 'r')
+	texto = arquivo.read()
+	print(texto)
+	arquivo.close()
